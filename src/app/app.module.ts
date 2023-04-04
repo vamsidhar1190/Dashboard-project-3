@@ -28,6 +28,8 @@ import { TableModule } from 'primeng/table';
 import { DialogModule } from 'primeng/dialog';
 import { HttpClientModule } from '@angular/common/http';
 import { UserOutline } from '@ant-design/icons-angular/icons';
+import { InputTextModule } from 'primeng/inputtext';
+
 
 
 const icons = [UserOutline];
@@ -43,6 +45,9 @@ const routes: Routes = [
     children:[
       {
         path:'',component:DashboardComponent
+      },
+      {
+        path:'Dashboard',component:DashboardComponent
       },
       {
         path:'Transcations',component:TranscationsComponent
@@ -87,7 +92,7 @@ const routes: Routes = [
     NzLayoutModule,
     NzBreadCrumbModule,
     NzDropDownModule,
-    NzIconModule,
+    
     MessagesModule,
     CardModule,
     ChartModule,
@@ -96,7 +101,11 @@ const routes: Routes = [
     TableModule,
     DialogModule,
     HttpClientModule,
-    NzIconModule.forRoot(icons)
+    NzIconModule.forRoot(icons),
+    InputTextModule,
+    FormsModule,
+    
+
    
     
     

@@ -10,6 +10,7 @@ import { MenuItem } from 'primeng/api';
 export class SidebarComponent {
   
   isCollapsed = false;
+value: any;
 
 
 }
