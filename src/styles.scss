@@ -11,3 +11,15 @@
 .pi-list:before{
     cursor: pointer;
 }
+// .p-megamenu-grid.p-megamenu-col-6 {
+//     width: 28%;
+// }
+
+.p-megamenu .p-megamenu-submenu-header {
+    margin: 0;
+    padding: 0.75rem 0.25rem;
+}
+.p-megamenu .p-megamenu-submenu {
+    padding: 0.25rem 0;
+    width: 8.5rem !important;
+}
