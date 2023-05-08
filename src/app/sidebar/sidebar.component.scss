@@ -50,6 +50,19 @@
 }
 .icons{
   position: absolute;
-  margin-left: 33px;
+  margin-left: 26px;
   margin-top: 17px;
+}
+.heading-wrapper{
+  width: 100%;
+}
+.heading-wrapper-content{
+  width: 41%;
+}
+.ant-layout-sider-collapsed .sider-image-highlight{
+position: relative;
+left: -11px;
+bottom: 0;
+
+
 }

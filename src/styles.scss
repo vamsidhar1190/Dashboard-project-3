@@ -23,3 +23,19 @@
     padding: 0.25rem 0;
     width: 8.5rem !important;
 }
+
+.ant-menu-submenu-branches div .ng-star-inserted{
+    position: relative;
+    left: -11px ;
+  
+  }
+  .ant-menu-submenu-branches div .ant-menu-submenu-arrow::before {
+    position: absolute;
+    left: 65px;
+    top: -19px;
+  }
+  .ant-menu-submenu-branches div .ant-menu-submenu-arrow::after {
+    position: absolute;
+    left: 65px;
+    top: -19px;
+  }

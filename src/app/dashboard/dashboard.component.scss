@@ -8,3 +8,48 @@
   border: 3px solid rgb(0, 4, 255);
   border-radius: 10px;
 }
+.account-activites-block{
+  margin-top: 50px;
+  justify-content: space-between;
+  text-align: center;
+}
+.account-activites-block .accounts-title{
+  // padding-right: 50px;
+  width: 34%;
+  }
+  .account-activites-block .transaction-title{
+  // padding-left: 50px;
+width: 48%;
+text-align: left;
+}
+  .img-content-block{
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    margin: 0px auto  !important;
+  }
+  .img-content-block img{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+object-fit: cover;
+
+  }
+  .img-container-wrapper{
+    justify-content: space-between;
+  }
+  .surface-card-first {
+    background-color:#c4c4ff!important;
+    
+ 
+    
+  }
+  .surface-card-second{
+background-color: #ffe9d5!important;
+  }
+  .surface-card-third{
+    background-color: #d2e4eb !important;
+  }
+  .surface-card-fourth {
+    background-color: #d1b6eb !important;
+  }
