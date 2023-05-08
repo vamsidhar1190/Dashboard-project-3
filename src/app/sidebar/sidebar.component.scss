@@ -6,12 +6,15 @@
     transition: color 0.3s;
   }
   .img-icon-bank{
+    cursor: pointer;
     width: 90px;
     height: 90px;
     margin: 0 auto;
   }
   .ant-layout-sider-collapsed  
   .img-icon-bank{
+    cursor: pointer;
+
     width: 40px;
     height: 40px;
     position: relative;
