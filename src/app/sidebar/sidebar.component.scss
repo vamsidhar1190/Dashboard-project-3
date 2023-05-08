@@ -14,7 +14,10 @@
   .img-icon-bank{
     width: 40px;
     height: 40px;
-    margin: 0 auto;
+    position: relative;
+    left: -4px;
+    // margin: 0 auto;
+    
     padding: 10px 0px;
   }
   .trigger:hover {
@@ -106,4 +109,10 @@ display: none !important;
   background: #000c17;
   position: relative;
   left: -5px;
+}
+.ant-menu-submenu-branches
+.ant-menu-inline{
+  // width: 196px;
+  // position: relative;
+  // left: -12px; 
 }
