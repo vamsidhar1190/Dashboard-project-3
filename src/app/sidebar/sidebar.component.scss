@@ -5,7 +5,18 @@
     cursor: pointer;
     transition: color 0.3s;
   }
-
+  .img-icon-bank{
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+  }
+  .ant-layout-sider-collapsed  
+  .img-icon-bank{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 10px 0px;
+  }
   .trigger:hover {
     color: #1890ff;
   }
@@ -65,8 +76,34 @@
 }
 .ant-layout-sider-collapsed .sider-image-highlight{
 position: relative;
-left: -11px;
+left: 5px;
 bottom: 0;
 
 
+}
+.ant-menu-submenu-branches{
+  overflow: hidden;
+}
+.ant-menu-submenu-branches .ant-menu-item-selected {
+  width: 197px;
+  // position: relative;
+  // left: 11px;
+  overflow: hidden;
+
+}
+.ant-layout-sider-collapsed .ant-menu-submenu--heading{
+display: none !important;
+}
+
+.ant-menu-submenu-contact-block{
+  overflow: hidden;
+} 
+
+
+
+.ant-menu-submenu-contact-block
+ .ant-menu-sub {
+  background: #000c17;
+  position: relative;
+  left: -5px;
 }

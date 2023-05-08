@@ -1,5 +1,8 @@
 <nz-layout>
   <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null" class="sider-wrapper">
+    <div class="img-icon-bank">
+      <img src="../../assets/icons8-bank-96.png" class="img-fluid" alt="">
+    </div>
     <ul nz-menu nzTheme="dark" nzMode="inline" class="mt-2">
       <i class="pi pi-home icons"></i>
       <li nz-submenu nzTitle="Bank Details" nzIcon="." class="ms-1">
@@ -18,10 +21,14 @@
           <li nz-menu-item routerLink="Madhapurbranch2">Madhapur Branch 2</li>
         </ul>
       </li>
-      <li nz-menu-item class="ms-1">
-        <span nz-icon nzType="file" class="sider-image-highlight" ></span>
-        <span routerLink="contact" >Contact</span>
-      </li>
+      <div class="ant-menu-submenu-contact-block">
+        <li nz-menu-item class="ms-1 ant-menu-submenu-contact" >
+          <span nz-icon nzType="file" class="sider-image-highlight" ></span>
+          <span routerLink="contact" class="ant-menu-submenu--heading" >Contact</span>
+        </li>
+
+      </div>
+    
     </ul>
   </nz-sider>
   <nz-layout>
