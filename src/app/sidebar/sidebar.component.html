@@ -33,15 +33,15 @@
   </nz-sider>
   <nz-layout>
     <nz-header>
-      <div class="d-flex  ">
+      <div class="d-flex heading-wrapper-main ">
         <div>
           <i class="pi pi-list ms-3" (click)="isCollapsed = !isCollapsed"></i>
         </div>
         <div class="d-flex heading-wrapper mt-2">
-         <div style="margin-top: -8px;" class="heading-wrapper-content">
+         <div  class="heading-wrapper-content">
           <span class="p-input-icon-left" >
             <i class="pi pi-search ms-4"></i>
-            <input style="height: 45px;  margin-bottom: -20px;" class="ms-4  " type="text" pInputText [(ngModel)]="value" />
+            <input  class="ms-4 heading-wrapper-content-input " type="text" pInputText [(ngModel)]="value" />
           </span> 
          </div>      
           <h1 >S S V Banks</h1>
@@ -51,7 +51,7 @@
 
     </nz-header>
     <nz-content>
-      <nz-breadcrumb>
+      <nz-breadcrumb class="main-content-wrapper">
         <nz-breadcrumb-item>Bank Dashboard</nz-breadcrumb-item>
         <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
       </nz-breadcrumb>

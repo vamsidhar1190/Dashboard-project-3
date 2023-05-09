@@ -36,4 +36,17 @@
 gap: 0px !important; 
 }
 
+
+@media only screen and (max-width: 767px){
+
+    .account-activites-chart-first  .p-card {
+        box-shadow: none !important;
+      }
+      .branches-details-block .p-megamenu-horizontal .p-megamenu-root-list {
+        justify-content: space-between;
+        
+    }
+
+}
+
  

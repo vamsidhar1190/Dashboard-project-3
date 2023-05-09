@@ -56,4 +56,87 @@ background-color: #ffe9d5!important;
   .surface-card-fourth {
     background-color: #d1b6eb !important;
   }
- 
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .transaction-wrapper {
+    flex-wrap: wrap;
+    margin-right: 0px !important;
+  }
+  .transaction-wrapper-block{
+    width: 47%;
+  }
+
+}
+
+
+  //mobile responsive starts here
+
+  @media only screen and (max-width: 767px){
+    .transaction-heading{
+      text-align: center;
+      font-size: 15px;
+    }
+    .transaction-wrapper{
+      flex-direction: column;
+      margin-right: 0px !important;
+      gap: 5px;
+    }
+    .account-activites-block{
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    .account-activites-block .accounts-title {
+      width: 100%;
+      text-align: center;
+      font-size: 17px;
+  }
+  .transaction-title{
+    font-size: 17px;
+    width: 100% !important;
+    text-align: center !important ;
+    transform: translateY(375px);
+  }
+  .account-activites-chart{
+    display: flex;
+    flex-direction: column;
+  }
+  .account-activites-chart-first{
+    transform: translateY(-45px);
+
+  }
+
+  .account-activites-chart-second{
+    width: 100% !important;
+    height: auto !important;
+    margin: 0px !important;
+  }
+  .branches-title{
+    font-size: 17px;
+    text-align: center;
+  }
+  .amounttransfer-title{
+    margin-top: 20px;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+  .img-container-wrapper {
+    flex-wrap: wrap;
+}
+.img-container-wrapper .p-card-images{
+width: 46%;
+margin: 5px 5px;
+}
+.img-container-wrapper .p-card-images button{
+  padding: 6px 8px;
+}
+
+.amount-cus{
+  font-size: 18px;
+
+}
+
+  
+  }
+  //mobile responsive ends here
