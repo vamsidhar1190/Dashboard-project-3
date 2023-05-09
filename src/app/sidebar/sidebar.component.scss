@@ -38,6 +38,8 @@
 
   }
 
+  
+
   nz-header {
     background: #fff;
     padding: 0;
@@ -113,9 +115,12 @@ display: none !important;
   position: relative;
   left: -5px;
 }
-.ant-menu-submenu-branches
-.ant-menu-inline{
-  // width: 196px;
-  // position: relative;
-  // left: -12px; 
+
+
+//mobile 
+@media only screen and (max-width: 767px){
+
+  .sider-wrapper{
+    
+  }
 }
