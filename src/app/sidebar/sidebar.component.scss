@@ -6,15 +6,21 @@
     transition: color 0.3s;
   }
   .img-icon-bank{
+    cursor: pointer;
     width: 90px;
     height: 90px;
     margin: 0 auto;
   }
   .ant-layout-sider-collapsed  
   .img-icon-bank{
+    cursor: pointer;
+
     width: 40px;
     height: 40px;
-    margin: 0 auto;
+    position: relative;
+    left: -4px;
+    // margin: 0 auto;
+    
     padding: 10px 0px;
   }
   .trigger:hover {
@@ -106,4 +112,10 @@ display: none !important;
   background: #000c17;
   position: relative;
   left: -5px;
+}
+.ant-menu-submenu-branches
+.ant-menu-inline{
+  // width: 196px;
+  // position: relative;
+  // left: -12px; 
 }
