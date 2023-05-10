@@ -123,15 +123,17 @@ display: none !important;
   position: relative;
   left: -5px;
 }
+
+
+
+
 //tab responsive starts here
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-  .sider-wrapper{
-    display: none !important;
-  }
+ 
   .heading-wrapper {
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .heading-wrapper-main{
     // width: 100%;
@@ -139,23 +141,60 @@ display: none !important;
   .heading-wrapper-content-input{
     // width: 120px;  
     // margin-bottom: -20px;
+    width: 150px;
   }
   .ant-layout-content {
    margin: 0px !important;
 }
+.inner-content {
+  padding: 10px;}
 }
 
+.pi-times{
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+    right: 10px;
+    top: 12px;
+    display: none;
+}
 //tab responsive ends here
 
 
 //mobile responsive starts here
 @media only screen and (max-width: 767px){
-.ant-layout-sider-collapsed{
-  display: none;
+  .sider-wrapper.ant-layout-sider-collapsed{
+  position: absolute;
+  height: 100vh;
+  z-index: 100;
+  width: 0 !important;
+  max-width: 0% !important;
+  /* flex: 0 0 0px !important; */
+  min-width: 0px !important;
+  left: -80px !important;
 }
 .sider-wrapper{
-  display: none !important;
+  position: absolute;
+  left: 0% !important;
+  height: 100vh;
+  z-index: 100;
 }
+// .sider-wrapper.ant-layout-sider-collapsed{
+//   position: absolute;
+//   left: 0 !important;
+//   width: 90% !important;
+//   height: 100vh !important;
+//   max-width: 90% !important;
+//   z-index: 100;
+  
+//   }
+//   .sider-wrapper
+//   {
+//   position: absolute;
+//   left: -90% !important;
+  
+  
+//   }
 .heading-wrapper {
   align-items: center;
   justify-content: space-between;
@@ -176,6 +215,12 @@ display: none !important;
   padding: 0px !important;
 
 }
-
+.heading-wrapper h1 {
+  padding-right: 0px ;
+}
+.pi-times{
+  display: block;
+  cursor: pointer;
+}
 }
 //mobile responsive ends here

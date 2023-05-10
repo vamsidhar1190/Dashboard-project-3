@@ -69,19 +69,19 @@
 </div>
 
 <div class="d-flex account-activites-block">
-    <h3 class="accounts-title">Accounts Activites</h3>
-    <h3 class="transaction-title">Todays Debit/credit/complaints %</h3>
+   
+   
 </div>
 <div class="d-flex account-activites-chart mt-2">
-    <div class=" account-activites-chart-first">
-        <div class="">
+    <div class="account-activites-chart-first">
+        <h3 class="accounts-title">Accounts Activites</h3>
             <p-card>
                 <p-chart type="doughnut" [data]="doughnutChartData"></p-chart>
             </p-card>
-        </div>
     </div>
 
     <div class="w-75 ms-3  account-activites-chart-second h-25rem mt-6">
+        <h3 class="transaction-title">Todays Debit/credit/complaints %</h3>
         <nz-progress [nzPercent]="30"></nz-progress>
         <nz-progress [nzPercent]="50" nzStatus="active"></nz-progress>
         <nz-progress [nzPercent]="70" nzStatus="exception"></nz-progress>

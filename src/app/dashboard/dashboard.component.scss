@@ -13,14 +13,14 @@
   justify-content: space-between;
   text-align: center;
 }
-.account-activites-block .accounts-title{
-  // padding-right: 50px;
-  width: 34%;
+ .accounts-title{
+  text-align: center;
   }
-  .account-activites-block .transaction-title{
-  // padding-left: 50px;
-width: 48%;
-text-align: left;
+  .transaction-title{
+text-align: center;
+position: relative;
+    top: -49px;
+
 }
   .img-content-block{
   background-color: rgb(120, 122, 247);;
@@ -61,10 +61,62 @@ background-color: #ffe9d5!important;
   .transaction-wrapper {
     flex-wrap: wrap;
     margin-right: 0px !important;
+    justify-content: space-evenly;
   }
   .transaction-wrapper-block{
     width: 47%;
   }
+  .p-card-images{
+width: 30%;
+  }
+  .img-container-wrapper{
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .transaction-heading{
+    text-align: center;
+  }
+  .account-activites-block {
+    flex-wrap: wrap;
+}
+  .account-activites-block .accounts-title {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.account-activites-block {
+  margin-top: 20px;
+}
+.transaction-title{
+  width: 100% ;
+  margin: 20px 0px;
+  position: relative;
+  top: 0;
+
+}
+.account-activites-chart{
+  display: flex;
+  flex-direction: column;
+}
+.account-activites-chart-first{
+  // transform: translateY(-45px);
+  margin: 0 auto;
+
+
+
+}
+.branches-details-block .p-megamenu-horizontal .p-megamenu-root-list {
+  justify-content: space-between;
+}
+.heading-wrapper-content {
+  margin-top: -5px;
+}
+.amounttransfer-title{
+  font-size: 22px;
+  text-align: center;
+  margin: 15px 0px;
+}
 
 }
 
