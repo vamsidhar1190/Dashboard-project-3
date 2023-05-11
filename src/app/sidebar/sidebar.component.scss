@@ -87,7 +87,7 @@
 }
 .ant-layout-sider-collapsed .sider-image-highlight{
 position: relative;
-left: 5px;
+left: 6px;
 bottom: 0;
 
 
@@ -151,7 +151,24 @@ display: none !important;
 }
 .inner-content {
   padding: 10px;}
+  .ant-layout-sider-collapsed   i{
+    font-size: 20px;
+  }
+  .ant-layout-sider-collapsed   .sider-image-highlight{
+    font-size: 20px;
+  }
+  .ant-layout-sider-collapsed .img-icon-bank{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: relative;
+  }
+
+
+
+
 }
+
 
 .pi-times{
   color: #fff;
@@ -176,6 +193,7 @@ display: none !important;
   min-width: 0px !important;
   left: -80px !important;
 }
+
 .sider-wrapper{
   position: absolute;
   left: 0% !important;

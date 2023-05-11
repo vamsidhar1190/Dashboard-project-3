@@ -23,17 +23,35 @@
     padding: 0.25rem 0;
     width: 8.5rem !important;
 }
+.ant-menu-submenu-bankdetails  .ng-star-inserted {
+    margin-left: 25px;
+}
+.ant-menu-submenu-bankdetails  .ng-trigger-collapseMotion {
+    margin-left: 0px !important;
+}
 
-// .ant-menu-submenu-branches div .ng-star-inserted{
-//     position: relative;
-//     left: -11px ;
-  
-//   }
+.ant-menu-submenu-branches  .ng-trigger-collapseMotion {
+    margin-left: 0px !important;
+
+}
+.ant-menu-submenu-branches  .ng-trigger-collapseMotion  .ant-menu-item{
+padding-left: 35px !important;
+ }
+ .ant-menu-submenu-bankdetails  .ng-trigger-collapseMotion .ant-menu-item{
+    padding-left: 35px !important;
+}
 .ant-menu-submenu-branches .ng-star-inserted {
-  margin-left: -1px !important ;
+ 
+    margin-left: 13px;
 }
 .ant-menu-submenu-branches .ant-menu-submenu-title {
 gap: 0px !important; 
+}
+.ant-layout-sider-collapsed   .ng-star-inserted {
+visibility: hidden;    
+}
+.ant-menu-submenu--heading{
+    margin-left: 25px;
 }
 //tab responsive starts here
 @media only screen and (min-width:768px) and (max-width:1024px) {
@@ -54,8 +72,10 @@ gap: 0px !important;
         width: auto !important;
     }
     
-    .account-activites-chart-first {
-// margin: 0 auto !important;
+
+    .account-activites-chart-first .p-card{
+        box-shadow: none ;
+
     }
     .branches-title{
         text-align: center;
@@ -68,6 +88,12 @@ gap: 0px !important;
   .p-card-images  button {
         padding: 6px 10px;
     }
+    .account-activites-chart-first   .p-card .p-card-body {
+        padding: 0rem ; 
+   }
+   .account-activites-chart-first   .p-card    .p-card-content{
+padding: 0rem;
+    }
 }
 //tab responsive ends here
 
@@ -79,10 +105,25 @@ gap: 0px !important;
     .account-activites-chart-first  .p-card {
         box-shadow: none !important;
       }
+      .account-activites-chart-first {
+        margin: 0 auto !important;
+            }
+      .account-activites-chart-first   .p-card .p-card-content {
+        padding: 0px 0px;
+    }
+    .account-activites-chart-first   .p-card .p-card-body {
+        padding: 0px;
+    }
       .branches-details-block .p-megamenu-horizontal .p-megamenu-root-list {
         justify-content: space-around;
         
     }
+
+   
+
+   .img-container-wrapper .p-card-images button {
+    font-size: 15px;
+}
 
 }
 //mobile responsive ends here

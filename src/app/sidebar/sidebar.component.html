@@ -1,12 +1,12 @@
 <nz-layout class="slide-wrapper-main">
   <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null" class="sider-wrapper ">
-    <div class="img-icon-bank">
+    <div class="img-icon-bank" >
       <img src="../../assets/icons8-bank-96.png" class="img-fluid" alt="">
-      <i class="pi pi-times" (click)="toggleSidebar()"></i>
+      <i class="pi pi-times"  (click)="isCollapsed = !isCollapsed"></i>
     </div>
     <ul nz-menu nzTheme="dark" nzMode="inline" class="mt-2">
       <i class="pi pi-home icons"></i>
-      <li nz-submenu nzTitle="Bank Details" nzIcon="." class="ms-1">
+      <li nz-submenu nzTitle="Bank Details"  class="ms-1 ant-menu-submenu-bankdetails">
         <ul>
           <li  nz-menu-item routerLink="Dashboard">Dashboard</li>
           <li nz-menu-item routerLink="Transcations">Transactions</li>
@@ -15,7 +15,7 @@
 
       <i class="pi pi-building icons"></i>
 
-      <li class="ps-3 ant-menu-submenu-branches" nz-submenu nzTitle="Branches" nzIcon="...." >
+      <li class="ps-3 ant-menu-submenu-branches" nz-submenu nzTitle="Branches"  >
       
         <ul>
           <li nz-menu-item routerLink="Madhapurbranch1">Madhapur Branch 1</li>
@@ -23,8 +23,10 @@
         </ul>
       </li>
       <div class="ant-menu-submenu-contact-block">
+        <i class="pi pi-mobile icons"></i>
+
         <li nz-menu-item class="ms-1 ant-menu-submenu-contact" >
-          <span nz-icon nzType="file" class="sider-image-highlight" ></span>
+          <span  class="sider-image-highlight" ></span>
           <span routerLink="contact" class="ant-menu-submenu--heading" >Contact</span>
         </li>
 
@@ -49,7 +51,6 @@
         </div>
 
       </div>
-
     </nz-header>
     <nz-content>
       <nz-breadcrumb class="main-content-wrapper">
@@ -57,10 +58,8 @@
         <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
       </nz-breadcrumb>
       <div class="inner-content">
-        <span nz-icon nzType="alert" nzTheme="outline"></span>        
         <router-outlet></router-outlet>
       </div>
     </nz-content>
   </nz-layout>
 </nz-layout>
-
