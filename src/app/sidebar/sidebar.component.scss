@@ -5,6 +5,9 @@
     cursor: pointer;
     transition: color 0.3s;
   }
+  @media (max-width: 767px) {
+    /* Add styles to collapse or hide the sidebar */
+  }
   .img-icon-bank{
     cursor: pointer;
     width: 90px;
