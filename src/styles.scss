@@ -11,9 +11,7 @@
 .pi-list:before{
     cursor: pointer;
 }
-// .p-megamenu-grid.p-megamenu-col-6 {
-//     width: 28%;
-// }
+
 
 .p-megamenu .p-megamenu-submenu-header {
     margin: 0;
@@ -23,27 +21,16 @@
     padding: 0.25rem 0;
     width: 8.5rem !important;
 }
-.ant-menu-submenu-bankdetails  .ng-star-inserted {
-    margin-left: 25px;
-}
-.ant-menu-submenu-bankdetails  .ng-trigger-collapseMotion {
-    margin-left: 0px !important;
-}
 
-.ant-menu-submenu-branches  .ng-trigger-collapseMotion {
-    margin-left: 0px !important;
 
-}
-.ant-menu-submenu-branches  .ng-trigger-collapseMotion  .ant-menu-item{
-padding-left: 35px !important;
- }
+
+
+
+
  .ant-menu-submenu-bankdetails  .ng-trigger-collapseMotion .ant-menu-item{
-    padding-left: 35px !important;
+    padding-left: 58px !important;
 }
-.ant-menu-submenu-branches .ng-star-inserted {
- 
-    margin-left: 13px;
-}
+
 .ant-menu-submenu-branches .ant-menu-submenu-title {
 gap: 0px !important; 
 }
@@ -53,6 +40,18 @@ visibility: hidden;
 .ant-menu-submenu--heading{
     margin-left: 25px;
 }
+.ant-menu-submenu-bankdetails .ant-menu-submenu-title{
+    padding-left: 47px !important;
+}
+.ant-menu-submenu-branches  .ng-trigger-collapseMotion  .ant-menu-item{
+    padding-left: 58px !important;
+     }
+     .ant-menu-submenu-branches .ant-menu-submenu-title{
+        padding-left: 36px !important;
+    }
+   .ant-menu-submenu-branches  .ant-menu.ant-menu-inline.ant-menu-sub.ng-tns-c4-1.ng-trigger.ng-trigger-collapseMotion.ng-star-inserted {
+        margin-left: -12px !important;
+    }
 //tab responsive starts here
 @media only screen and (min-width:768px) and (max-width:1024px) {
     .p-megamenu-horizontal .p-megamenu-root-list {
