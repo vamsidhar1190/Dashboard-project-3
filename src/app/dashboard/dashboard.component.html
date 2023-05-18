@@ -70,12 +70,13 @@
 
 
 <div class="d-flex account-activites-chart mt-4">
+ 
     <div class="account-activites-chart-first">
-        <h3 class="accounts-title">Accounts Activites</h3>
-            <p-card>
-                <p-chart type="doughnut" [data]="doughnutChartData"></p-chart>
-            </p-card>
-    </div>
+        <h3 class="accounts-title">Accounts Activities</h3>
+        <p-card>
+          <p-chart #chart type="doughnut" [data]="doughnutChartData" class="chartdata"></p-chart>
+        </p-card>
+      </div>
 
     <div class="w-75 ms-3  account-activites-chart-second h-25rem mt-6">
         <h3 class="transaction-title">Todays Debit/credit/complaints %</h3>

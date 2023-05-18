@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,AfterViewInit, ViewChild     } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
 import { CustomerserviceService } from '../customerservice.service';
 import { Customer } from './customer';
+import { Chart } from 'chart.js';
 
 
 
@@ -11,7 +12,9 @@ import { Customer } from './customer';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
-export class DashboardComponent implements OnInit{
+export class DashboardComponent implements OnInit,AfterViewInit{
+
+    @ViewChild('chart') chart!: Chart 
 
     customers!: Customer[]
 
@@ -25,6 +28,7 @@ export class DashboardComponent implements OnInit{
   displayPosition: boolean | undefined;
 
   position: string | undefined;
+  
 
   constructor(private primengConfig: PrimeNGConfig, private customerservice:CustomerserviceService){}
 
@@ -34,6 +38,11 @@ export class DashboardComponent implements OnInit{
     this.megamenu();
     this.customerservice.getCustomersLarge().then((customers) => (this.customers = customers));
      
+  }
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.chart.resize(); // Call the chart's resize() method after a short delay
+    }, 0);
   }
   showDialog(){
     this.visible=true
